@@ -22,7 +22,17 @@ namespace hw2
             task1.SortFruits();
             Console.WriteLine("--------------");
 
+            Task2 task2 = new Task2();
+            Console.WriteLine("----Task 2----");
+            Console.WriteLine("");
+            int[] numbers = { 1, 5, 10, 15, 20 };
+            int[] result = task2.FilterAndTransform(numbers, 5, 15);
+            Console.WriteLine(string.Join(", ", result));
 
+            int a = 10, b = 20;
+            Console.WriteLine("a = " + a + " b = " + b);
+            task2.Swap(ref a, ref b);
+            Console.WriteLine("--------------");
         }
     }
 }

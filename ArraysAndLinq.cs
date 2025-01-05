@@ -20,7 +20,7 @@ namespace hw2
             task1.FindFruits();
             task1.CountLetters();
             task1.SortFruits();
-            Console.WriteLine("--------------");
+            Console.WriteLine("--------------\n");
 
             Task2 task2 = new Task2();
             Console.WriteLine("----Task 2----");
@@ -32,7 +32,7 @@ namespace hw2
             int a = 10, b = 20;
             Console.WriteLine("a = " + a + " b = " + b);
             task2.Swap(ref a, ref b);
-            Console.WriteLine("--------------");
+            Console.WriteLine("--------------\n");
 
             Task3 task3 = new Task3();
             Console.WriteLine("----Task 3----");
@@ -41,7 +41,14 @@ namespace hw2
             task3.DescribeWeather(Task3.Weather.Rainy);
             task3.DescribeWeather(Task3.Weather.Snowy);
             task3.DescribeWeather(Task3.Weather.Cloudy);
-            Console.WriteLine("--------------");
+            Console.WriteLine("--------------\n");
+
+            Task4 task4 = new Task4();
+            Console.WriteLine("----Task 4----");
+            Console.WriteLine("");
+            int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            Console.WriteLine(task4.RecursiveSum(arr, arr.Length));
+            Console.WriteLine("--------------\n");
         }
     }
 }

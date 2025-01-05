@@ -33,6 +33,15 @@ namespace hw2
             Console.WriteLine("a = " + a + " b = " + b);
             task2.Swap(ref a, ref b);
             Console.WriteLine("--------------");
+
+            Task3 task3 = new Task3();
+            Console.WriteLine("----Task 3----");
+            Console.WriteLine("");
+            task3.DescribeWeather(Task3.Weather.Sunny);
+            task3.DescribeWeather(Task3.Weather.Rainy);
+            task3.DescribeWeather(Task3.Weather.Snowy);
+            task3.DescribeWeather(Task3.Weather.Cloudy);
+            Console.WriteLine("--------------");
         }
     }
 }
